@@ -1,0 +1,20 @@
+{
+  "name": "Python 3 - Multiplayer Game",
+  "image": "mcr.microsoft.com/devcontainers/python:3.10",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+      ]
+    }
+  },
+  "postCreateCommand": "echo 'Codespace is ready! You can now run the server and client in separate terminals.'",
+  "forwardPorts": [12345],
+  "portsAttributes": {
+    "12345": {
+      "label": "Game Server",
+      "onAutoForward": "openPreview"
+    }
+  }
+}
